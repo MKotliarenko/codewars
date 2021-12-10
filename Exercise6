@@ -1,0 +1,8 @@
+function countSheeps(arrayOfSheep) {
+  // TODO May the force be with you
+  var count=0;
+  for(let a of arrayOfSheep){
+    if(a){count++;}
+  }
+  return count;
+}
