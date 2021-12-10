@@ -1,0 +1,18 @@
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  if(iterable.length==0){
+    iterable = [];
+    return iterable;
+  }
+  var result = [];
+  for(var i=0; i<iterable.length;i++){
+    for(var j=i+1;j<iterable.length;j++){
+      if(iterable[i]!=iterable[j]){
+        result.push(iterable[i]);
+        i=j;
+      }
+    }
+  }
+  result.push(iterable [iterable.length-1]);
+  return result;
+}
