@@ -1,0 +1,23 @@
+function DNAStrand(dna){
+ //your code here
+ var result = "";
+ for(const i of dna){
+   switch(i) {
+     case 'A':
+       result +='T';
+       break;
+     case 'T':
+       result +='A';
+       break;
+     case 'G':
+       result +='C';
+       break;
+     case 'C':
+       result +='G';
+       break;
+     default:
+       return result;
+   }
+ }
+ return result;
+}
