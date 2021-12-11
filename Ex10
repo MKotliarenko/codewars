@@ -1,0 +1,5 @@
+function isTriangle(a,b,c)
+{
+  var max = Math.max(a,b,c);
+  return a+b+c>max+max?true:false;
+}
