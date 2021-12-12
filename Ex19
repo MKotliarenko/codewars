@@ -1,0 +1,13 @@
+function howMuchILoveYou(nbPetals) {
+  var a = ["I love you","a little","a lot","passionately","madly","not at all"];
+  if(nbPetals<7){
+    return a[nbPetals-1];
+  }
+  else if(nbPetals%6===0){
+    return a[5];
+  }
+  else{
+    return a[nbPetals%6-1];
+  }
+
+}
