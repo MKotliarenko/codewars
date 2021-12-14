@@ -1,0 +1,10 @@
+function getSum( a,b )
+{
+   var max = Math.max(a,b);
+   var min = parseInt(Math.min(a,b));
+   var a=0;
+   for(min;min<=max;min++){
+     a=parseInt(a)+parseInt(min);
+  }
+  return a;
+}
