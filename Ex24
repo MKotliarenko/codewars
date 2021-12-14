@@ -1,0 +1,13 @@
+function getCount(str) {
+  var vowelsCount = 0;
+
+var arr = str.split('');
+  for(var i=0;i<str.length;i++){
+    var c=str[i];
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+      vowelsCount++;
+    }
+  }
+
+  return vowelsCount;
+}
