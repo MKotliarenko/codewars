@@ -1,0 +1,11 @@
+function towerBuilder(nFloors) {
+  var a=" ".repeat(nFloors-1);
+  var stern = "*";
+  var tower =[];
+  for(let i=0;i<nFloors;i++){
+    tower.push(a+stern+a);
+    a=a.slice(0,-1);
+    stern+="**";
+  }
+  return tower;
+}
