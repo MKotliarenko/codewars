@@ -1,0 +1,4 @@
+function century(year) {
+  var a = parseInt(year/100);
+  return year%100===0?a:year<101?1:a+1;
+}
