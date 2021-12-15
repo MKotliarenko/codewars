@@ -1,0 +1,13 @@
+function calc(x){
+  var sum="";
+  for(const i of x){
+    sum += i.charCodeAt(0);
+  }
+  var s1=0;
+  var s2=0;
+  for(const j of sum){
+    s1+=parseInt(j);
+    s2+=parseInt(j.replace(7,1));
+  }
+  return s1-s2;
+}
