@@ -1,0 +1,13 @@
+function duplicateEncode(word){
+  var result = "";
+  var a = word.toLowerCase().split("");
+  for (const i of a){
+    if(a.filter(j=>j==i).length>1){
+      result +=")";
+    }
+    else{
+      result += "(";
+    }
+  }
+  return result;
+}
