@@ -1,0 +1,8 @@
+function doubleEveryOther(a) {
+  for(var i=0;i<a.length;i++){
+    if(i%2!=0){
+      a[i]*=2;
+    }
+  }
+  return a;
+}
