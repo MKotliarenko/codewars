@@ -1,0 +1,4 @@
+function stantonMeasure(arr){
+    let m = arr.filter(a=>a==1).length;
+    return arr.filter(i=>i==m).length;
+  }
