@@ -1,0 +1,12 @@
+function upArray(arr){
+  for(const a of arr){
+    if(parseInt(a)>9||parseInt(a)<0||isNaN(a)){
+      return null;
+    }
+  }
+  var arr1=(parseInt(arr.join(""))+1);
+  var myArr = String(arr1).split("").map((a)=>{
+  return Number(a)
+})
+  return myArr;
+}
