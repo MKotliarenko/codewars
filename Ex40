@@ -1,0 +1,11 @@
+function singleDigit(n) {
+  while(n>9){
+    var sum=0;
+    var g = n.toString(2).split("");
+    for(const i of g){
+      sum+= parseInt(i);
+    }
+    n=sum;
+  }
+  return n;
+}
