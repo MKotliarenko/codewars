@@ -1,12 +1,26 @@
 function upArray(arr){
+  if(arr.length==0||arr.length==1&&arr[0]==0){
+      return null;
+  }
   for(const a of arr){
-    if(parseInt(a)>9||parseInt(a)<0||isNaN(a)){
+    if(Number(a)>9||Number(a)<0||isNaN(a)){
       return null;
     }
   }
-  var arr1=(parseInt(arr.join(""))+1);
+  if(arr[arr.length]<9){
+  var aaa = Number.arr[arr.length]+1;
+  var fff = arr.slice(0,-1);
+  return fff.push(aaa);
+  }
+  var i = 1
+  if(arr[arr.length-i]==9){
+    i++;
+  }
+  var aaa = arr.slice(-i);
+  var fff = arr.slice(0,-i);
+  var arr1 = Number(aaa.join(""))+1;
   var myArr = String(arr1).split("").map((a)=>{
   return Number(a)
 })
-  return myArr;
+  return fff.concat(myArr);
 }
