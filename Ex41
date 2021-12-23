@@ -13,14 +13,20 @@ function upArray(arr){
   return fff.push(aaa);
   }
   var i = 1
-  if(arr[arr.length-i]==9){
+  while(arr[arr.length-i]==9){
     i++;
+  }
+  if(i==arr.length){
+    var arr1 = Number(arr.join(""))+1;
+    var myArr = String(arr).split("").map((a)=>{
+  return Number(a);})
+    return myArr;
   }
   var aaa = arr.slice(-i);
   var fff = arr.slice(0,-i);
   var arr1 = Number(aaa.join(""))+1;
   var myArr = String(arr1).split("").map((a)=>{
-  return Number(a)
+  return Number(a);
 })
   return fff.concat(myArr);
 }
