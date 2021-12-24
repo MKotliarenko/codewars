@@ -1,0 +1,4 @@
+function onesCounter(input) {
+  return input.join('').split('0').map(e=>e.length).filter(e=>e);
+
+}
