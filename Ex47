@@ -1,0 +1,4 @@
+function longest(s1, s2) {
+  var answer = [s1, s2].join("").split("").sort();
+  return Array.from( new Set(answer)).join("");
+}
