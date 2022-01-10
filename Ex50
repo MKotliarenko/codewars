@@ -1,0 +1,4 @@
+function solve(arr){
+var unique = arr.filter((v,i,a)=>a.lastIndexOf(v)==i);
+return unique;
+}
